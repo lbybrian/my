@@ -14,7 +14,7 @@
   "dependencies": {
     "@antv/g2plot": "^2.3.2",
     "@antv/g6": "^4.0.3",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "cytoscape": "^3.16.2",
     "cytoscape-avsdf": "^1.0.0",
     "cytoscape-cise": "^1.0.0",
