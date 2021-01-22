@@ -1,18 +1,239 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Demo</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="#" />
+    <title>简单的D3二维图表</title>
     <style>
-      html,body{
-        height: 100%;
-        width: 100%;
-      }
+        img{
+            width: 300px;
+            height: 200px;
+        }
+
+        .item{
+            display: inline-block;
+        }
+
+        .name{
+            text-align: center;
+        }
+
+        body{
+            margin: 3%;
+        }
     </style>
-  </head>
-  <body>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+</head>
+<body>
+    <h1>简单的D3二维图表</h1>
+
+    <h2>直方图</h2>
+    <div>
+        <div class="item">
+            <a href="./src/barChart/basicBarChart/index.html"><img src="./pic/barChart/basicBarChart.png" alt="" /></a>
+            <div class="name">基础直方图</div>
+        </div>
+        <div class="item">
+            <a href="./src/barChart/stackedBarChart/index.html"><img src="./pic/barChart/stackedBarChart.png" alt="" /></a>
+            <div class="name">堆叠直方图</div>
+        </div>
+        <div class="item">
+            <a href="./src/barChart/multiBarChart/index.html"><img src="./pic/barChart/multiBarChart.png" alt="" /></a>
+            <div class="name">多列直方图</div>
+        </div>
+        <div class="item">
+            <a href="./src/barChart/horizontalBarChart/index.html"><img src="./pic/barChart/horizontalBarChart.png" alt="" /></a>
+            <div class="name">横向直方图</div>
+        </div>
+    </div>
+
+    <h2>折线图</h2>
+    <div>
+        <div class="item">
+            <a href="./src/lineChart/basicLineChart/index.html"><img src="./pic/lineChart/basicLineChart.png" alt="" /></a>
+            <div class="name">基础折线图</div>
+        </div>
+        <div class="item">
+            <a href="./src/lineChart/stackedAreaChart/index.html"><img src="./pic/lineChart/stackAreaChart.png" alt="" /></a>
+            <div class="name">堆叠面积图</div>
+        </div>
+        <div class="item">
+            <a href="./src/lineChart/smoothLineChart/index.html"><img src="./pic/lineChart/smoothLineChart.png" alt="" /></a>
+            <div class="name">曲线图</div>
+        </div>
+        <div class="item">
+            <a href="./src/lineChart/parallelLineChart/index.html"><img src="./pic/lineChart/parallelLineChart.png" alt="" /></a>
+            <div class="name">平行坐标系</div>
+        </div>
+    </div>
+
+    <h2>饼图</h2>
+    <div>
+        <div class="item">
+            <a href="./src/pieChart/basicPieChart/index.html"><img src="./pic/pieChart/basicPieChart.png" alt="" /></a>
+            <div class="name">基础饼图</div>
+        </div>
+        <div class="item">
+            <a href="./src/pieChart/doughnutChart/index.html"><img src="./pic/pieChart/doughnutChart.png" alt="" /></a>
+            <div class="name">环状饼图</div>
+        </div>
+        <div class="item">
+            <a href="./src/pieChart/nightingale/index.html"><img src="./pic/pieChart/nightingale.png" alt="" /></a>
+            <div class="name">南丁格尔图</div>
+        </div>
+    </div>
+
+    <h2>散点图</h2>
+    <div>
+        <div class="item">
+            <a href="./src/scatterChart/basicScatterChart/index.html"><img src="./pic/scatterChart/basicScatterChart.png" alt="" /></a>
+            <div class="name">基础散点图</div>
+        </div>
+        <div class="item">
+            <a href="./src/scatterChart/multiSymbolChart/index.html"><img src="./pic/scatterChart/multiSymbolChart.png" alt="" /></a>
+            <div class="name">多符号散点图</div>
+        </div>
+        <div class="item">
+            <a href="./src/scatterChart/bubbleChart/index.html"><img src="./pic/scatterChart/bubbleChart.png" alt="" /></a>
+            <div class="name">气泡图</div>
+        </div>
+    </div>
+
+    <h2>雷达图</h2>
+    <div>
+        <div class="item">
+            <a href="./src/radarChart/basicRadarChart/index.html"><img src="./pic/radarChart/basicRadarChart.png" alt="" /></a>
+            <div class="name">基础雷达图</div>
+        </div>
+    </div>
+
+    <h2>矩形树状图</h2>
+    <div>
+        <div class="item">
+            <a href="./src/treeMapChart/basicTreeMap/index.html"><img src="./pic/treeMapChart/basicTreeMap.png" alt="" /></a>
+            <div class="name">基础矩形树状图</div>
+        </div>
+        <div class="item">
+            <a href="./src/treeMapChart/zoomableTreeMap/index.html"><img src="./pic/treeMapChart/zoomableTreeMap.png" alt="" /></a>
+            <div class="name">可缩放矩形树状图</div>
+        </div>
+    </div>
+
+    <h2>树图</h2>
+    <div>
+        <div class="item">
+            <a href="./src/treeChart/basicTreeChart/index.html"><img src="./pic/treeChart/basicTreeChart.png" alt="" /></a>
+            <div class="name">基础树图</div>
+        </div>
+        <div class="item">
+            <a href="./src/treeChart/radialTree/index.html"><img src="./pic/treeChart/radialTree.png" alt="" /></a>
+            <div class="name">径向树图</div>
+        </div>
+    </div>
+
+    <h2>封闭图</h2>
+    <div>
+        <div class="item">
+            <a href="./src/enclosureChart/basicEnclosure/index.html"><img src="./pic/enclosureChart/basicEnclosure.png" alt="" /></a>
+            <div class="name">基础封闭图</div>
+        </div>
+        <div class="item">
+            <a href="./src/enclosureChart/zoomableEnclosure/index.html"><img src="./pic/enclosureChart/zoomableEnclosure.png" alt="" /></a>
+            <div class="name">可缩放封闭图</div>
+        </div>
+    </div>
+
+    <h2>漏斗图</h2>
+    <div>
+        <div class="item">
+            <a href="./src/funnelChart/basicFunnel/index.html"><img src="./pic/funnelChart/basicFunnel.png" alt="" /></a>
+            <div class="name">基础漏斗图</div>
+        </div>
+    </div>
+
+    <h2>地图</h2>
+    <div>
+        <div class="item">
+            <a href="./src/map/china/index.html"><img src="./pic/map/china.png" alt="" /></a>
+            <div class="name">中国地图</div>
+        </div>
+    </div>
+
+    <h2>力图</h2>
+    <div>
+        <div class="item">
+            <a href="./src/force/movingPoint/index.html"><img src="./pic/force/movingPoint.png" alt="" /></a>
+            <div class="name">移动的点</div>
+        </div>
+        <div class="item">
+            <a href="./src/force/colorfulBubbles/index.html"><img src="./pic/force/colorfulBubbles.png" alt="" /></a>
+            <div class="name">多彩的泡泡</div>
+        </div>
+        <div class="item">
+            <a href="./src/force/forceLayout/index.html"><img src="./pic/force/forceLayout.png" alt="" /></a>
+            <div class="name">力导向图</div>
+        </div>
+    </div>
+
+    <h2>河流图</h2>
+    <div>
+        <div class="item">
+            <a href="./src/riverChart/basicRiver/index.html"><img src="./pic/riverChart/basicRiver.png" alt="" /></a>
+            <div class="name">基础河流图</div>
+        </div>
+    </div>
+
+    <h2>桑基图</h2>
+    <div>
+        <div class="item">
+            <a href="./src/sanKeyChart/basicSanKey/index.html"><img src="./pic/sanKeyChart/basicSanKey.png" alt="" /></a>
+            <div class="name">基础桑基图</div>
+        </div>
+    </div>
+
+    <h2>仪表图</h2>
+    <div>
+        <div class="item">
+            <a href="./src/gauge/basicGauge/index.html"><img src="./pic/gauge/basicGauge.png" alt="" /></a>
+            <div class="name">基础仪表图</div>
+        </div>
+    </div>
+
+    <h2>旭日图</h2>
+    <div>
+        <div class="item">
+            <a href="./src/sunburst/basicSunburst/index.html"><img src="./pic/sunburst/basicSunburst.png" alt="" /></a>
+            <div class="name">基础旭日图</div>
+        </div>
+    </div>
+
+    <h2>盒须图</h2>
+    <div>
+        <div class="item">
+            <a href="./src/boxplot/basicBoxplot/index.html"><img src="./pic/boxplot/basicBoxplot.png" alt="" /></a>
+            <div class="name">基础盒须图</div>
+        </div>
+    </div>
+
+    <h2>热力图</h2>
+    <div>
+        <div class="item">
+            <a href="./src/heatMap/calendar/index.html"><img src="./pic/heatMap/calendar.png" alt="" /></a>
+            <div class="name">日历热力图</div>
+        </div>
+        <div class="item">
+            <a href="./src/heatMap/chinaMap/index.html"><img src="./pic/heatMap/heatMap.png" alt="" /></a>
+            <div class="name">人口分布热力图(非真实数据)</div>
+        </div>
+    </div>
+
+    <h2>关系图</h2>
+    <div>
+        <div class="item">
+            <a href="./src/graph/chord/index.html"><img src="./pic/graph/chord.png" alt="" /></a>
+            <div class="name">弦图</div>
+        </div>
+    </div>
+
+</body>
 </html>
